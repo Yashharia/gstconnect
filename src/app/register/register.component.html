@@ -1,0 +1,93 @@
+<div class="App">
+  <section class="regitr_page">
+    <div class="container mt-5 pt-5">
+      <div class="card mx-auto border-0">
+        <div class="card-header border-bottom-0 bg-transparent">
+          <ul class="nav nav-tabs justify-content-center pt-4" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link text-primary active" id="pills-login-tab" data-toggle="pill" href="#pills-login"
+                role="tab" aria-controls="pills-login" aria-selected="true">Register As Corporate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" id="pills-register-tab" data-toggle="pill" href="#pills-register"
+                role="tab" aria-controls="pills-register" aria-selected="false">Register As Professional</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body pb-4">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade active show" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+              <form ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="text" name="username" ngModel value="" required /><span
+                    class="focus-input100"></span><span class="label-input100">Username</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="text" name="email" ngModel value="" required /><span
+                    class="focus-input100"></span><span class="label-input100">Email</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="password" name="password" ngModel value="" required /><span
+                    class="focus-input100"></span><span class="label-input100">Password</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="password" name="confirmPassword" value="" required /><span
+                    class="focus-input100"></span><span class="label-input100">Confirm Password</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="text" name="phone" ngModel value="" required /><span
+                    class="focus-input100"></span><span class="label-input100">Phone</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="text" name="pan" required value="" style="text-transform: uppercase"
+                    ngModel /><span class="focus-input100"></span><span class="label-input100">PAN Number</span>
+                </div>
+                <div class="container-login100-form-btn">
+                  <button type="submit" class="login100-form-btn">
+                    Register
+                  </button>
+                </div>
+                <div class="bck_btn p-t-8"><a href="#/"> Back </a></div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+              <form ngNativeValidate (ngSubmit)="registerAsProfessional(f)" #f="ngForm">
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="text" name="username" value="" required /><span
+                    class="focus-input100"></span><span class="label-input100">Username</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="text" name="email" value="" required ngModel /><span
+                    class="focus-input100"></span><span class="label-input100">Email</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="password" name="password" required ngModel value="" /><span
+                    class="focus-input100"></span><span class="label-input100">Password</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input type="password" class="input100" type="confirmPassword" required name="confirmPassword" ngModel
+                    value="" /><span class="focus-input100"></span><span class="label-input100">Confirm Password</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="text" name="phone" required ngModel value="" /><span
+                    class="focus-input100"></span><span class="label-input100">Phone</span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <input class="input100" type="text" name="pan" required ngModel value=""
+                    style="text-transform: uppercase" /><span class="focus-input100"></span><span
+                    class="label-input100">PAN Number</span>
+                </div>
+                <div class="container-login100-form-btn">
+                  <button type="submit" class="login100-form-btn">
+                    Register
+                  </button>
+                </div>
+                <div class="bck_btn p-t-8"><a href="#/"> Back </a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

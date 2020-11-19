@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand " routerLink="">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown show" style=""><a class="nav-link dropdown-toggle waves-effect waves-light"
+          id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Law</a>
+        <div class="dropdown-menu dropdown-primary " aria-labelledby="navbarDropdownMenuLink"><a
+            class="dropdown-item waves-effect waves-light" routerLink="/create-law">Create Law</a><a
+            class="dropdown-item waves-effect waves-light" routerLink="/view-laws">View Laws</a></div>
+      </li>
+      <li class="nav-item dropdown show" style=""><a class="nav-link dropdown-toggle waves-effect waves-light"
+          id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Client</a>
+        <div class="dropdown-menu dropdown-primary " aria-labelledby="navbarDropdownMenuLink"><a
+            class="dropdown-item waves-effect waves-light" routerLink="/create-client">Create Client</a><a
+            class="dropdown-item waves-effect waves-light" routerLink="/view-clients">View Client</a></div>
+      </li>
+      <li class="nav-item dropdown show" style=""><a class="nav-link dropdown-toggle waves-effect waves-light"
+          id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> User</a>
+        <div class="dropdown-menu dropdown-primary " aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item waves-effect waves-light" routerLink="/user-role">User Role</a>
+          <a class="dropdown-item waves-effect waves-light" routerLink="/invite-user">Invite User</a>
+          <a class="dropdown-item waves-effect waves-light d-none" routerLink="/user-registration">User
+            Registration</a>
+        </div>
+      </li>
+      <li clas="navbar-item" style=""><a class="nav-link" routerLink="/view-tracker">Tracker</a></li>
+      <li clas="navbar-item" style=""><a class="nav-link">Logout</a></li>
+    </ul>
+
+  </div>
+</nav>

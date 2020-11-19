@@ -1,0 +1,128 @@
+<section class="view-tracker-page">
+  <div class="container trackercontainer">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="title-heading">View Tracker</h1>
+      </div>
+      <div class="col-md-12">
+        <div class="tracker-table-responsive">
+          <table class="col-md-12 table-bordered tracker-table">
+            <thead class="cf">
+              <tr class="first-tracker-col">
+                <th>S No.</th>
+                <th>Laws</th>
+                <th>Compliance Name</th>
+                <th>Frequency</th>
+                <th>Turnover</th>
+                <th colspan="2" class="text-center">Action</th>
+              </tr>
+              <tr *ngFor="let law of laws; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ law.law }}</td>
+                <td>{{ law.compliance_name }}</td>
+                <td>{{ law.frequency }}</td>
+                <td> {{ law.turnover }}</td>
+                <td class="text-center">
+                  <fa-icon [icon]="faEdit" data-toggle="modal" data-target="#myModal" (click)="updateLaw(law.id)"
+                    style="font-size: 24px;"></fa-icon>
+                </td>
+                <td class="text-center">
+                  <fa-icon fa-icon [icon]="faTrash" class="fa fa-trash-o" style="font-size: 24px; color: red;"
+                    (click)="deleteLaw(law.id)"></fa-icon>
+                </td>
+              </tr>
+
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="viewlaws-page p-b-43 p-t-43">
+  <div class="container-fluid">
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Update Details</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+
+
+          <form ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="modal-body">
+              <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="law" value="{{ lawModal }}" required /><span
+                  class="focus-input100"></span><span class="label-input100">Law</span>
+              </div>
+
+              <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="complianceName" ngModel value="{{ complianceNameModal }}"
+                  required /><span class="focus-input100"></span><span class="label-input100">Compliance Name</span>
+              </div>
+
+              <div class="wrap-input100 validate-input">
+                <select name="frequency" id="selt_user_role" placeholder-text="Item 1" class="input100"
+                  formControlName="frequency" required>
+                  <option value="1" disabled="" class="select-dropdown__list-item" value="{{ frequencyModal }}">
+                    Select Frequency Type
+                  </option>
+                  <option class="select-dropdown__list-item" [selected]="frequencyModal == 'Monthly'" value="Monthly">
+                    Monthly
+                  </option>
+                  <option class="select-dropdown__list-item" [selected]="frequencyModal == 'Quarterly'"
+                    value="Quarterly">
+                    Quarterly
+                  </option>
+                  <option class="select-dropdown__list-item" [selected]="frequencyModal == 'Yearly'" value="Yearly">
+                    Yearly
+                  </option>
+                </select><span class="focus-input100"></span><span class="label-input100">Frequency</span>
+              </div>
+
+              <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="turnover" formControlName="turnover"
+                  value="{{ turnoverModal }}" required /><span class="focus-input100"></span><span
+                  class="label-input100">Turnover</span>
+              </div>
+
+
+
+              <input type="hidden" name="id" formControlName="id" value="{{ idModal }}" />
+
+
+              <div class="container-login100-form-btn">
+                <button type="submit" class="login100-form-btn">Update</button>
+              </div>
+            </div>
+          </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

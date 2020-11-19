@@ -1,0 +1,647 @@
+<section class="viewlaws-page p-b-43 p-t-43">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 p-t-55 p-b-43">
+        <h1 class="text-center">View Client</h1>
+      </div>
+      <div id="no-more-tables">
+        <table
+          class="col-md-12 table-bordered table-striped table-condensed cf"
+        >
+          <thead class="cf">
+            <tr>
+              <th>Sr No.</th>
+              <th>Company Name</th>
+              <th>Compliance Name</th>
+              <th>Entity Type</th>
+              <th>Address</th>
+              <th>State</th>
+              <th>Custom Field</th>
+              <th>Registration Name</th>
+              <th>Registration Number</th>
+              <th>State Of Registration</th>
+              <th>Approx Turnover</th>
+              <th>Date Of Registration</th>
+              <th>Surrender Of Registration</th>
+              <th colspan="2">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td id="comp1">vipra</td>
+              <td id="comp1">Gautam</td>
+              <td id="entity1">Pvt Limited</td>
+              <td id="address1">vashi</td>
+              <td id="state1">Andhra Pradesh</td>
+              <td id="coustomField1">dfsaasdfasdf</td>
+              <td id="rName1">vipra</td>
+              <td id="rNumb1">vipra</td>
+              <td id="regState1">Maharashtra</td>
+              <td id="turnover1">123123123</td>
+              <td id="rDate1">November 24, 2020</td>
+              <td id="surender1">asdfasdf</td>
+              <td id="cName1" class="d-none">Gautam</td>
+              <td id="Created1" class="d-none">1605602701</td>
+              <td id="filed1" class="d-none">1606176000000</td>
+              <td id="period1" class="d-none"></td>
+              <td id="update1" class="d-none">1605602701</td>
+              <td id="upload1" class="d-none"></td>
+              <td>
+                <i
+                  class="fa fa-trash-o"
+                  style="font-size: 24px; color: red"
+                ></i>
+              </td>
+              <td>
+                <i
+                  class="fa fa-edit"
+                  data-toggle="modal"
+                  data-target="#myModal2"
+                  style="font-size: 24px; color: blue"
+                ></i>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td id="comp1">vipra</td>
+              <td id="comp1">gst9b</td>
+              <td id="entity1"></td>
+              <td id="address1">vashi</td>
+              <td id="state1"></td>
+              <td id="coustomField1"></td>
+              <td id="rName1">vipra</td>
+              <td id="rNumb1">vipra</td>
+              <td id="regState1">Maharashtra</td>
+              <td id="turnover1">123123123</td>
+              <td id="rDate1">November 24, 2020</td>
+              <td id="surender1"></td>
+              <td id="cName1" class="d-none">gst9b</td>
+              <td id="Created1" class="d-none">1605602701</td>
+              <td id="filed1" class="d-none">1606176000000</td>
+              <td id="period1" class="d-none"></td>
+              <td id="update1" class="d-none">1605602701</td>
+              <td id="upload1" class="d-none"></td>
+              <td>
+                <i
+                  class="fa fa-trash-o"
+                  style="font-size: 24px; color: red"
+                ></i>
+              </td>
+              <td>
+                <i
+                  class="fa fa-edit"
+                  data-toggle="modal"
+                  data-target="#myModal2"
+                  style="font-size: 24px; color: blue"
+                ></i>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td id="comp1">vipra</td>
+              <td id="comp1">xyz</td>
+              <td id="entity1"></td>
+              <td id="address1">vashi</td>
+              <td id="state1"></td>
+              <td id="coustomField1"></td>
+              <td id="rName1">vipra</td>
+              <td id="rNumb1">vipra</td>
+              <td id="regState1">Maharashtra</td>
+              <td id="turnover1">123123123</td>
+              <td id="rDate1">November 24, 2020</td>
+              <td id="surender1"></td>
+              <td id="cName1" class="d-none">xyz</td>
+              <td id="Created1" class="d-none">1605602701</td>
+              <td id="filed1" class="d-none">1606176000000</td>
+              <td id="period1" class="d-none"></td>
+              <td id="update1" class="d-none">1605602701</td>
+              <td id="upload1" class="d-none"></td>
+              <td>
+                <i
+                  class="fa fa-trash-o"
+                  style="font-size: 24px; color: red"
+                ></i>
+              </td>
+              <td>
+                <i
+                  class="fa fa-edit"
+                  data-toggle="modal"
+                  data-target="#myModal2"
+                  style="font-size: 24px; color: blue"
+                ></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Update Details</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="wrap-input100 validate-input">
+              <input
+                class="input100"
+                type="text"
+                name="companyName"
+                value=""
+              /><span class="focus-input100"></span
+              ><span class="label-input100">Company Name</span>
+            </div>
+            <div class="wrap-input100 validate-input">
+              <select
+                id="selt_entity"
+                placeholder-text="Item 1"
+                class="input100 select"
+              >
+                <option
+                  value="1"
+                  disabled=""
+                  class="select-dropdown__list-item"
+                >
+                  Select Entity Type
+                </option>
+                <option class="select-dropdown__list-item" value="Pvt Limited">
+                  Pvt Limited
+                </option>
+                <option class="select-dropdown__list-item" value="Limited">
+                  Limited
+                </option>
+                <option class="select-dropdown__list-item" value="Firm">
+                  Firm
+                </option>
+                <option class="select-dropdown__list-item" value="LLP">
+                  LLP
+                </option>
+                <option class="select-dropdown__list-item" value="Prop.">
+                  Prop.
+                </option>
+                <option class="select-dropdown__list-item" value="AOP">
+                  AOP
+                </option>
+                <option class="select-dropdown__list-item" value="BOI">
+                  BOI
+                </option></select
+              ><span class="focus-input100"></span
+              ><span class="label-input100">Entity Type</span>
+            </div>
+            <div class="wrap-input100 validate-input">
+              <input
+                class="input100"
+                type="text"
+                name="address"
+                value=""
+              /><span class="focus-input100"></span
+              ><span class="label-input100">Register Address</span>
+            </div>
+            <div class="hf-input">
+              <div class="wrap-input100 validate-input">
+                <select
+                  id="state"
+                  placeholder-text="Item 1"
+                  class="input100 select"
+                >
+                  <option
+                    value="1"
+                    disabled=""
+                    class="select-dropdown__list-item"
+                  >
+                    Select State
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Andhra Pradesh"
+                  >
+                    Andhra Pradesh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Arunachal Pradesh"
+                  >
+                    Arunachal Pradesh
+                  </option>
+                  <option class="select-dropdown__list-item" value="Assam">
+                    Assam
+                  </option>
+                  <option class="select-dropdown__list-item" value="Bihar">
+                    Bihar
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Chhattisgarh"
+                  >
+                    Chhattisgarh
+                  </option>
+                  <option class="select-dropdown__list-item" value="Goa">
+                    Goa
+                  </option>
+                  <option class="select-dropdown__list-item" value="Gujarat">
+                    Gujarat
+                  </option>
+                  <option class="select-dropdown__list-item" value="Haryana">
+                    Haryana
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Himachal Pradesh"
+                  >
+                    Himachal Pradesh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Jammu and Kashmir"
+                  >
+                    Jammu and Kashmir
+                  </option>
+                  <option class="select-dropdown__list-item" value="Jharkhand">
+                    Jharkhand
+                  </option>
+                  <option class="select-dropdown__list-item" value="Karnataka">
+                    Karnataka
+                  </option>
+                  <option class="select-dropdown__list-item" value="Kerala">
+                    Kerala
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Madhya Pradesh"
+                  >
+                    Madhya Pradesh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Maharashtra"
+                  >
+                    Maharashtra
+                  </option>
+                  <option class="select-dropdown__list-item" value="Manipur">
+                    Manipur
+                  </option>
+                  <option class="select-dropdown__list-item" value="Meghalaya">
+                    Meghalaya
+                  </option>
+                  <option class="select-dropdown__list-item" value="Mizoram">
+                    Mizoram
+                  </option>
+                  <option class="select-dropdown__list-item" value="Nagaland">
+                    Nagaland
+                  </option>
+                  <option class="select-dropdown__list-item" value="Odisha">
+                    Odisha
+                  </option>
+                  <option class="select-dropdown__list-item" value="Punjab">
+                    Punjab
+                  </option>
+                  <option class="select-dropdown__list-item" value="Rajasthan">
+                    Rajasthan
+                  </option>
+                  <option class="select-dropdown__list-item" value="Sikkim">
+                    Sikkim
+                  </option>
+                  <option class="select-dropdown__list-item" value="Tamil Nadu">
+                    Tamil Nadu
+                  </option>
+                  <option class="select-dropdown__list-item" value="Telangana">
+                    Telangana
+                  </option>
+                  <option class="select-dropdown__list-item" value="Tripura">
+                    Tripura
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Uttar Pradesh"
+                  >
+                    Uttar Pradesh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Uttarakhand"
+                  >
+                    Uttarakhand
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="West Bengal"
+                  >
+                    West Bengal
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Andaman and Nicobar"
+                  >
+                    Andaman and Nicobar
+                  </option>
+                  <option class="select-dropdown__list-item" value="Chandigarh">
+                    Chandigarh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Dadra and Nagar Haveli"
+                  >
+                    Dadra and Nagar Haveli
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Daman and Diu"
+                  >
+                    Daman and Diu
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Lakshadweep"
+                  >
+                    Lakshadweep
+                  </option>
+                  <option class="select-dropdown__list-item" value="Delhi">
+                    Delhi
+                  </option>
+                  <option class="select-dropdown__list-item" value="Puducherry">
+                    Puducherry
+                  </option></select
+                ><span class="focus-input100"></span
+                ><span class="label-input100">Select State</span>
+              </div>
+              <div class="wrap-input100 validate-input">
+                <input
+                  class="input100"
+                  type="text"
+                  name="customField"
+                  value=""
+                /><span class="focus-input100"></span
+                ><span class="label-input100">Custom Field</span>
+              </div>
+            </div>
+            <div class="hf-input">
+              <div class="wrap-input100 validate-input">
+                <input
+                  class="input100"
+                  type="text"
+                  name="registrationName"
+                  value=""
+                /><span class="focus-input100"></span
+                ><span class="label-input100">Registration Name</span>
+              </div>
+              <div class="wrap-input100 validate-input">
+                <input
+                  class="input100"
+                  type="text"
+                  name="registration"
+                  value=""
+                /><span class="focus-input100"></span
+                ><span class="label-input100">Registration Number</span>
+              </div>
+              <div class="wrap-input100 validate-input">
+                <select
+                  id="stateRegistration"
+                  placeholder-text="Item 1"
+                  class="input100 select"
+                >
+                  <option
+                    value="1"
+                    disabled=""
+                    class="select-dropdown__list-item"
+                  >
+                    Select State Of Registration
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Andhra Pradesh"
+                  >
+                    Andhra Pradesh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Arunachal Pradesh"
+                  >
+                    Arunachal Pradesh
+                  </option>
+                  <option class="select-dropdown__list-item" value="Assam">
+                    Assam
+                  </option>
+                  <option class="select-dropdown__list-item" value="Bihar">
+                    Bihar
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Chhattisgarh"
+                  >
+                    Chhattisgarh
+                  </option>
+                  <option class="select-dropdown__list-item" value="Goa">
+                    Goa
+                  </option>
+                  <option class="select-dropdown__list-item" value="Gujarat">
+                    Gujarat
+                  </option>
+                  <option class="select-dropdown__list-item" value="Haryana">
+                    Haryana
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Himachal Pradesh"
+                  >
+                    Himachal Pradesh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Jammu and Kashmir"
+                  >
+                    Jammu and Kashmir
+                  </option>
+                  <option class="select-dropdown__list-item" value="Jharkhand">
+                    Jharkhand
+                  </option>
+                  <option class="select-dropdown__list-item" value="Karnataka">
+                    Karnataka
+                  </option>
+                  <option class="select-dropdown__list-item" value="Kerala">
+                    Kerala
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Madhya Pradesh"
+                  >
+                    Madhya Pradesh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Maharashtra"
+                  >
+                    Maharashtra
+                  </option>
+                  <option class="select-dropdown__list-item" value="Manipur">
+                    Manipur
+                  </option>
+                  <option class="select-dropdown__list-item" value="Meghalaya">
+                    Meghalaya
+                  </option>
+                  <option class="select-dropdown__list-item" value="Mizoram">
+                    Mizoram
+                  </option>
+                  <option class="select-dropdown__list-item" value="Nagaland">
+                    Nagaland
+                  </option>
+                  <option class="select-dropdown__list-item" value="Odisha">
+                    Odisha
+                  </option>
+                  <option class="select-dropdown__list-item" value="Punjab">
+                    Punjab
+                  </option>
+                  <option class="select-dropdown__list-item" value="Rajasthan">
+                    Rajasthan
+                  </option>
+                  <option class="select-dropdown__list-item" value="Sikkim">
+                    Sikkim
+                  </option>
+                  <option class="select-dropdown__list-item" value="Tamil Nadu">
+                    Tamil Nadu
+                  </option>
+                  <option class="select-dropdown__list-item" value="Telangana">
+                    Telangana
+                  </option>
+                  <option class="select-dropdown__list-item" value="Tripura">
+                    Tripura
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Uttar Pradesh"
+                  >
+                    Uttar Pradesh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Uttarakhand"
+                  >
+                    Uttarakhand
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="West Bengal"
+                  >
+                    West Bengal
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Andaman and Nicobar"
+                  >
+                    Andaman and Nicobar
+                  </option>
+                  <option class="select-dropdown__list-item" value="Chandigarh">
+                    Chandigarh
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Dadra and Nagar Haveli"
+                  >
+                    Dadra and Nagar Haveli
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Daman and Diu"
+                  >
+                    Daman and Diu
+                  </option>
+                  <option
+                    class="select-dropdown__list-item"
+                    value="Lakshadweep"
+                  >
+                    Lakshadweep
+                  </option>
+                  <option class="select-dropdown__list-item" value="Delhi">
+                    Delhi
+                  </option>
+                  <option class="select-dropdown__list-item" value="Puducherry">
+                    Puducherry
+                  </option></select
+                ><span class="focus-input100"></span
+                ><span class="label-input100"
+                  >Select State Of Registration</span
+                >
+              </div>
+              <div class="wrap-input100 validate-input">
+                <input
+                  class="input100"
+                  type="text"
+                  name="turnover"
+                  value=""
+                /><span class="focus-input100"></span
+                ><span class="label-input100">Approx Turnover (Optional)</span>
+              </div>
+              <div class="wrap-input100 validate-input">
+                <input
+                  class="input100 has-val"
+                  type="date"
+                  name="dor"
+                  value=""
+                /><span class="focus-input100"></span
+                ><span class="label-input100 has-val"
+                  >Date Of Registration</span
+                >
+              </div>
+              <div class="wrap-input100 validate-input">
+                <input class="input100" type="text" name="sor" value="" /><span
+                  class="focus-input100"
+                ></span
+                ><span class="label-input100"
+                  >Surrender Of Registration(Optional)</span
+                >
+              </div>
+            </div>
+            <div>
+              <div class="accordion w-100" id="accordionExample">
+                <div class="my-2">Select the Compliances</div>
+                <div id="checkData" class="row my-2">
+                  <div class="form-check ml-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      value="asdasd"
+                    /><label class="form-check-label">asdasd</label>
+                  </div>
+                  <div class="form-check ml-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      value="xyz"
+                    /><label class="form-check-label">xyz</label>
+                  </div>
+                  <div class="form-check ml-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      value="Gautam"
+                    /><label class="form-check-label">Gautam</label>
+                  </div>
+                  <div class="form-check ml-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      value="gst9b"
+                    /><label class="form-check-label">gst9b</label>
+                  </div>
+                </div>
+              </div>
+              <span class="focus-input100"></span
+              ><span class="label-input100"></span>
+            </div>
+            <div class="container-login100-form-btn">
+              <button class="login100-form-btn" type="submit">Update</button>
+            </div>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

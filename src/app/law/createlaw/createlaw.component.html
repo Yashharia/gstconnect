@@ -1,0 +1,68 @@
+<section class="flawspage p-b-43 p-t-43">
+  <div class="container mt-5 pt-5">
+    <div class="card mx-auto border-0">
+      <div class="user-hed p-b-43">
+        <h2>Laws</h2>
+      </div>
+      <form ngNativeValidate [formGroup]="form" (ngSubmit)=" onSubmit()">
+        <!-- law  field -->
+
+        <div class="wrap-input100 validate-input">
+          <input class="input100" type="text" name="law" formControlName="law" value="" required /><span
+            class="focus-input100"></span><span class="label-input100">Laws</span>
+        </div>
+        <div class="invalidField" *ngIf="form.get('law').touched && form.get('law').invalid">
+          <div *ngIf="form.get('law').errors.required">Law is required</div>
+        </div>
+
+        <!-- Compliance name field -->
+
+        <div class="wrap-input100 validate-input">
+          <input class="input100" type="text" name="complianceName" formControlName="complianceName" value=""
+            required /><span class="focus-input100"></span><span class="label-input100">Compliance
+            Name</span>
+        </div>
+
+
+        <!-- compliance name close -->
+
+        <!-- frequency field -->
+
+        <div class="wrap-input100 validate-input">
+          <select name="frequency" id="selt_user_role" placeholder-text="Item 1" class="input100"
+            formControlName="frequency" required>
+            <option value="1" disabled="" class="select-dropdown__list-item">
+              Select Frequency Type
+            </option>
+            <option class="select-dropdown__list-item" value="Monthly">
+              Monthly
+            </option>
+            <option class="select-dropdown__list-item" value="Quarterly">
+              Quarterly
+            </option>
+            <option class="select-dropdown__list-item" value="Yearly">
+              Yearly
+            </option>
+          </select>
+        </div>
+
+
+        <!-- turnover field -->
+
+        <div class="wrap-input100 validate-input">
+          <input class="input100" type="text" name="turnover" formControlName="turnover" value="" required /><span
+            class="focus-input100"></span><span class="label-input100">Turnover &amp;
+            State wise / Entity wise parameters</span>
+        </div>
+
+
+        <div class="container-login100-form-btn">
+          <button type="submit" class="login100-form-btn">
+            Submit
+          </button>
+          <div class="bck_btn p-t-8"><a href="#/view-laws"> Back </a></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
